@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Music Stats</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_favourites">Favourite</string>
+    <string name="nav_charts">Charts</string>
+    <string name="nav_artists">Artists</string>
+    <string name="nav_awards">Awards</string>
+</resources>

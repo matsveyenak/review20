@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000">
+
+            <ImageView
+                android:id="@+id/artistItemImage"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.045"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/artistItemName"
+                android:layout_width="235dp"
+                android:layout_height="94dp"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="120dp"
+                android:layout_marginBottom="24dp"
+                android:fontFamily="@font/rubik_medium"
+                android:gravity="center"
+                android:text="artist name"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.52"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/artistItemImage"
+                app:layout_constraintVertical_bias="0.0" />
+
+
+            <TextView
+                android:id="@+id/artistTopTracks"
+                android:layout_width="210dp"
+                android:layout_height="31dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="32dp"
+                android:fontFamily="@font/rubik_medium"
+                android:gravity="center"
+                android:text="The best tracks"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.501"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/artistItemName"
+                app:layout_constraintVertical_bias="0.037" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvTopTracks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/artistTopTracks" />
+
+            <TextView
+                android:id="@+id/artistBio"
+                android:layout_width="210dp"
+                android:layout_height="31dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/rubik_medium"
+                android:gravity="center"
+                android:text="Biography"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rvTopTracks" />
+
+            <TextView
+                android:id="@+id/artistBiography"
+                android:layout_width="296dp"
+                android:layout_height="199dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="88dp"
+                android:fontFamily="@font/rubik_light"
+                android:gravity="center|center_vertical"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula convallis molestie. Cras ut velit sed nibh dictum fringilla. Vivamus nec nunc porta, rutrum mauris id, hendrerit urna. Maecenas dapibus congue lectus, gravida laoreet nunc luctus eu. Ut semper arcu sed est porta, vitae eleifend arcu viverra. Curabitur tincidunt nulla leo, vitae scelerisque mi dignissim in. Nulla pellentesque consectetur erat, non blandit est blandit non. Donec vel aliquet quam. Etiam vulputate, lorem et euismod vehicula, nibh sem efficitur nibh, eu imperdiet nisi dolor in nibh. Sed a elementum mauris. Aliquam hendrerit, justo a tempor iaculis, quam sapien viverra leo, ut."
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/artistBio" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="?android:attr/windowBackground"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/navigation" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

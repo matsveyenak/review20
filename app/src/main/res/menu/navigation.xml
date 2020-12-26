@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_favourite"
+        android:icon="@drawable/nav_favor"
+        android:title="@string/nav_favourites" />
+
+    <item
+        android:id="@+id/nav_charts"
+        android:icon="@drawable/nav_ch"
+        android:title="@string/nav_charts" />
+
+<!--    <item-->
+<!--        android:id="@+id/nav_home"-->
+<!--        android:icon="@drawable/ic_launcher_background"-->
+<!--        android:title="@string/nav_home" />-->
+
+    <item
+        android:id="@+id/nav_artists"
+        android:icon="@drawable/nav_art"
+        android:title="@string/nav_artists" />
+
+    <item
+        android:id="@+id/nav_awards"
+        android:icon="@drawable/nav_aw"
+        android:title="@string/nav_awards" />
+
+</menu>
