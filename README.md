@@ -6,7 +6,7 @@ An application for music connoisseurs who are interested in statistics about the
 ## **Installation**
 
 The application runs **on the Android operating system**.
-To install, you must either download the existing project in the repository (*clone or download*), where you need to run it in the working environment, or use an .apk file that can be installed directly on your device (pre-allow installation from external sources in the settings). Also, for the application to work properly, you need to **have a Spotify account and a Spotify application on your phone**.
+To install, you should download the existing project in the repository (*clone or download*), where you need to run it in the working environment (Android Studio). Also, for the application to work properly, you need to **have a Spotify account and a Spotify application on your phone**.
 
 ## **Use**
 
