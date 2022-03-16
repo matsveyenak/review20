@@ -5,7 +5,7 @@
 ## **Description**
 An application for music connoisseurs who are interested in statistics about the most popular tracks and artists for 2020 in the music industry. Based on the data of the Spotify service, you can find out the **top most listened tracks** in more than 20 countries, visit the pages of **the best singers** in the world, as well as study in detail who won **the most significant music awards**. This application is designed specifically for amateurs of the modern music industry, who are constantly tracking global trends, as well as for fans of all kinds of statistics. Thanks to the wide possibilities of the streaming platform **Spotify**, which is not the first year considered the best in its niche, you can track the preferences of people around the world. For a detailed acquaintance, a user can listen to tracks with a convinient built-in music player, and, moreover, save the ones he likes and form a playlist in Spotify account.
 
-For more information please visit **matsveyenak.herokuapp.com**
+For more information please visit **https://matsveyenak.herokuapp.com**
 
 ## **Installation**
 
